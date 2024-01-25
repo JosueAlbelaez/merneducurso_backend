@@ -12,15 +12,15 @@ const proyectosSchema = mongoose.Schema(
       trim: true,
       required: true,
     },
-    fechaEntrega: {
+   /* fechaEntrega: {
       type: Date,
       default: Date.now(),
-    },
+    },*/ 
     cliente: {
       type: String,
       trim: true,
-      required: true,
-    },
+      required: false,
+    }, 
     creador: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Usuario",

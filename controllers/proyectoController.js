@@ -29,7 +29,8 @@ const obtenerProyecto = async (req, res) => {
   const proyecto = await Proyecto.findById(id)
     .populate({
       path: "tareas",
-      populate: { path: "completado", select: "nombre" },
+      // QUITÉ 
+      populate: {path: "completado",  select: "nombre" },
     })
     .populate("colaboradores", "nombre email");
 

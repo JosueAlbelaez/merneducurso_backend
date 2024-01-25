@@ -12,19 +12,19 @@
     "MERN",
     "Node"
   ],
-  "author": "Juan De la torre",
+  "author": "Josué Albeláez",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
+    "dotenv": "^16.3.1",
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.1",
-    "nodemailer": "^6.7.2",
-    "socket.io": "^4.4.1"
+    "mongoose": "^6.9.2",
+    "nodemailer": "^6.9.8",
+    "socket.io": "^4.6.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.20"
   }
 }

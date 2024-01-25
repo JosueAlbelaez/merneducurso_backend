@@ -98,7 +98,7 @@ const eliminarTarea = async (req, res) => {
   }
 };
 
-const cambiarEstado = async (req, res) => {
+  const cambiarEstado = async (req, res) => {
   const { id } = req.params;
 
   const tarea = await Tarea.findById(id).populate("proyecto");
@@ -127,12 +127,12 @@ const cambiarEstado = async (req, res) => {
     .populate("completado");
 
   res.json(tareaAlmacenada);
-};
+}; 
 
 export {
   agregarTarea,
   obtenerTarea,
   actualizarTarea,
   eliminarTarea,
-  cambiarEstado,
+ cambiarEstado,
 };
